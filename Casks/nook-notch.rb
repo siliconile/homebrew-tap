@@ -1,6 +1,6 @@
 cask "nook-notch" do
-  version "0.3.1"
-  sha256 "8d45a4f08ef534fec81821c79ad685d4af14410f4a6ac45052d67283188ade64"
+  version "0.4.0"
+  sha256 "69f80dfd4e247e2912cdf4019dffb9001d1297045042d6410139a0bb4fe450a4"
 
   url "https://github.com/siliconile/Nook/releases/download/v#{version}/Nook-#{version}.zip"
   name "Nook"
