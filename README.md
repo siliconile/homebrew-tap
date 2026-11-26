@@ -8,4 +8,4 @@ brew install --cask siliconile/tap/nook-notch
 
 Nook isn't notarized, so the cask removes the quarantine flag after installing; macOS then opens it without the "Apple could not verify" prompt.
 
-Update with `brew upgrade --cask nook-notch`. The cask is bumped automatically on every Nook release.
+Update with `brew upgrade --cask nook-notch`. The cask is bumped automatically within an hour of every Nook release.

@@ -1,10 +1,10 @@
 name: Bump Nook
 
-# Points the cask at the latest Nook release. Runs every 6 hours and on demand,
+# Points the cask at the latest Nook release. Runs hourly and on demand,
 # so no cross-repo token is needed in the Nook release workflow.
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
