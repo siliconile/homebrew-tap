@@ -12,14 +12,13 @@ cask "nook-notch" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Nook.app"
 
   # Nook is ad-hoc signed, not notarized: without this, Gatekeeper blocks the first launch.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Nook.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Nook.app"]
   end
 
   uninstall quit: "io.github.siliconile.Nook"
